@@ -1,700 +1,700 @@
-<div align='center'>
+<div dir="rtl" align='center'>
 
-# Open Source Resources for Figma Plugin and Widget Development
+# منابع متن‌باز برای توسعه پلاگین و ویجت فیگما
 
-_A collection of open source plugins, widgets and other resources for Figma + FigJam that have been shared on GitHub._
+_مجموعه‌ای از پلاگین‌ها، ویجت‌ها و دیگر منابع متن‌باز برای فیگما + فیگ‌جم که در گیت‌هاب به اشتراک گذاشته شده‌اند._
 
 </div>
 
-> _Pull Requests are being welcomed. Please see the [Contributing Guide](CONTRIBUTING.md) before opening a Pull Request._
+> _از پول ریکوئست‌ها استقبال می‌شود. لطفاً قبل از باز کردن پول ریکوئست، [راهنمای مشارکت](CONTRIBUTING.md) را مطالعه کنید._
 
-## DISCLAIMER:
+## سلب مسئولیت:
 
-The resources provided are meant to be helpful for Figma plugin and widget development. They are not endorsed or sponsored by Figma in any way. **Please do your own due diligence and security review before using any resources listed.**
-
----
-
-## Table of Contents
-
-- [Resources](#resources) -- Resources for building plugins and widgets
-  - [Starter Templates](#starter-templates)
-  - [Design System Components](#design-system-components)
-  - [Helper Functions](#helper-functions)
-  - [CI/CD Release Tools](#cicd-release-tools)
-- [Plugins](#plugins) -- Plugin Source Code
-  - [Accessibility](#accessibility)
-  - [Color](#color)
-  - [Design Linters](#design-linters)
-  - [Design Systems](#design-systems)
-  - [Developer Tools](#developer-tools)
-  - [Export](#export)
-  - [Icons](#icons)
-  - [Maps](#icons)
-  - [Organization](#organization)
-  - [Responsive](#responsive)
-  - [Text](#text)
-  - [Utilities](#utilities)
-  - [Misc](#misc)
-- [Widgets](#widgets) -- Widget Source Code
+منابع ارائه‌شده با هدف کمک به توسعه پلاگین و ویجت فیگما گردآوری شده‌اند. این منابع به هیچ وجه توسط فیگما تأیید یا حمایت مالی نشده‌اند. **لطفاً قبل از استفاده از هر یک از منابع لیست‌شده، بررسی‌های لازم و امنیتی خود را انجام دهید.**
 
 ---
 
-## Resources
+## فهرست مطالب
 
-A collection of resources to help accelerate the development process of Figma plugins and widgets.
+- [منابع](#resources) -- منابعی برای ساخت پلاگین‌ها و ویجت‌ها
+  - [قالب‌های اولیه](#starter-templates)
+  - [کامپوننت‌های سیستم طراحی](#design-system-components)
+  - [توابع کمکی](#helper-functions)
+  - [ابزارهای انتشار CI/CD](#cicd-release-tools)
+- [پلاگین‌ها](#plugins) -- کد منبع پلاگین‌ها
+  - [دسترسی‌پذیری](#accessibility)
+  - [رنگ](#color)
+  - [لینترهای طراحی](#design-linters)
+  - [سیستم‌های طراحی](#design-systems)
+  - [ابزارهای توسعه‌دهندگان](#developer-tools)
+  - [خروجی گرفتن (Export)](#export)
+  - [آیکون‌ها](#icons)
+  - [نقشه‌ها](#maps)
+  - [سازماندهی](#organization)
+  - [ریسپانسیو (واکنش‌گرا)](#responsive)
+  - [متن](#text)
+  - [ابزارهای کاربردی](#utilities)
+  - [متفرقه](#misc)
+- [ویجت‌ها](#widgets) -- کد منبع ویجت‌ها
 
 ---
 
-### Starter Templates
+## منابع
 
-These starter templates package the boilerplate needed to develop plugins and widgets.
+مجموعه‌ای از منابع برای کمک به تسریع فرآیند توسعه پلاگین‌ها و ویجت‌های فیگما.
+
+---
+
+### قالب‌های اولیه
+
+این قالب‌های اولیه، کدهای آماده (boilerplate) مورد نیاز برای توسعه پلاگین‌ها و ویجت‌ها را بسته‌بندی کرده‌اند.
 
 #### Create Figma Plugin
 
-[SOURCE CODE](https://github.com/yuanqing/create-figma-plugin) · [MIT](https://github.com/yuanqing/create-figma-plugin/blob/main/LICENSE.md)
+[کد منبع](https://github.com/yuanqing/create-figma-plugin) · [MIT](https://github.com/yuanqing/create-figma-plugin/blob/main/LICENSE.md)
 
-🔋 The comprehensive toolkit for developing plugins and widgets for Figma and FigJam
+🔋 جعبه ابزار جامع برای توسعه پلاگین‌ها و ویجت‌ها برای فیگما و فیگ‌جم
 
 ---
 
 #### FigPlug
 
-[SOURCE CODE](https://github.com/rsms/figplug) · [MIT](https://github.com/rsms/figplug/blob/master/LICENSE)
+[کد منبع](https://github.com/rsms/figplug) · [MIT](https://github.com/rsms/figplug/blob/master/LICENSE)
 
-figplug is a small program for building Figma plugins. It offers all the things you need for most projects: TypeScript, React/JSX, asset bundling, plugin manifest generation, etc.
+figplug یک برنامه کوچک برای ساخت پلاگین‌های فیگما است. این برنامه تمام چیزهایی که برای اکثر پروژه‌ها نیاز دارید را ارائه می‌دهد: تایپ‌اسکریپت، ری‌اکت/JSX، باندل کردن دارایی‌ها، تولید مانیفست پلاگین و غیره.
 
 ---
 
 #### Figma Plugin React Template
 
-[SOURCE CODE](https://github.com/nirsky/figma-plugin-react-template) · NO LICENSE
+[کد منبع](https://github.com/nirsky/figma-plugin-react-template) · بدون لایسنس
 
-Quickstart your Figma Plugin with this template and tooling.
+با استفاده از این قالب و ابزارها، پلاگین فیگمای خود را به سرعت شروع کنید.
 
 ---
 
 #### Figsvelte
 
-[SOURCE CODE](https://github.com/thomas-lowry/figsvelte) · [MIT](https://github.com/thomas-lowry/figsvelte/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/figsvelte) · [MIT](https://github.com/thomas-lowry/figsvelte/blob/master/LICENSE)
 
-A boilerplate for creating Figma plugins using Svelte.
+یک قالب آماده برای ساخت پلاگین‌های فیگما با استفاده از Svelte.
 
 ---
 
 #### Figma Plugin Template
 
-[SOURCE CODE](https://github.com/tomquinonero/figma-plugin-template) · NO LICENSE
+[کد منبع](https://github.com/tomquinonero/figma-plugin-template) · بدون لایسنس
 
-A Figma plugin template using svelte. SCSS and Typescript support
+یک قالب پلاگین فیگما با استفاده از Svelte. با پشتیبانی از SCSS و Typescript.
 
 ---
 
 #### fwidgets
 
-[SOURCE CODE](https://github.com/fwextensions/fwidgets) · [MIT](https://github.com/fwextensions/fwidgets/blob/main/LICENSE)
+[کد منبع](https://github.com/fwextensions/fwidgets) · [MIT](https://github.com/fwextensions/fwidgets/blob/main/LICENSE)
 
-The fastest way to create a Figma plugin UI — with zero UI code.
+سریع‌ترین راه برای ساخت رابط کاربری پلاگین فیگما — بدون حتی یک خط کدنویسی برای UI.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Design System Components
+### کامپوننت‌های سیستم طراحی
 
 #### Figma Kit
 
-[SOURCE CODE](https://github.com/tigranpetrossian/figma-kit) · [MIT](https://github.com/tigranpetrossian/figma-kit/blob/beta/LICENSE)
+[کد منبع](https://github.com/tigranpetrossian/figma-kit) · [MIT](https://github.com/tigranpetrossian/figma-kit/blob/beta/LICENSE)
 
-An extensive set of React components for building Figma plugins. UI3-ready, first-class Tailwind support.
+مجموعه‌ای گسترده از کامپوننت‌های ری‌اکت برای ساخت پلاگین‌های فیگما. آماده برای UI3، با پشتیبانی درجه یک از Tailwind.
 
 #### Figma Plugin DS Svelte
 
-[SOURCE CODE](https://github.com/thomas-lowry/figma-plugin-ds-svelte) · [MIT](https://github.com/thomas-lowry/figma-plugin-ds-svelte/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/figma-plugin-ds-svelte) · [MIT](https://github.com/thomas-lowry/figma-plugin-ds-svelte/blob/master/LICENSE)
 
-Figma Plugin DS components made with Svelte
+کامپوننت‌های سیستم طراحی پلاگین فیگما که با Svelte ساخته شده‌اند.
 
 ---
 
 #### Figma Plugin DS
 
-[SOURCE CODE](https://github.com/thomas-lowry/figma-plugin-ds) · [MIT](https://github.com/thomas-lowry/figma-plugin-ds/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/figma-plugin-ds) · [MIT](https://github.com/thomas-lowry/figma-plugin-ds/blob/master/LICENSE)
 
-A small lightweight design system for use in Figma Plugins
+یک سیستم طراحی کوچک و سبک برای استفاده در پلاگین‌های فیگما.
 
 ---
 
 #### React Figma Plugin DS
 
-[SOURCE CODE](https://github.com/alexandrtovmach/react-figma-plugin-ds) · [MIT](https://github.com/alexandrtovmach/react-figma-plugin-ds/blob/master/LICENSE)
+[کد منبع](https://github.com/alexandrtovmach/react-figma-plugin-ds) · [MIT](https://github.com/alexandrtovmach/react-figma-plugin-ds/blob/master/LICENSE)
 
-React components of Figma design system
+کامپوننت‌های ری‌اکت سیستم طراحی فیگما.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Helper Functions
+### توابع کمکی
 
 #### figma-await-ipc
 
-[SOURCE CODE](https://github.com/fwextensions/figma-await-ipc) · [MIT](https://github.com/fwextensions/figma-await-ipc/blob/main/LICENSE)
+[کد منبع](https://github.com/fwextensions/figma-await-ipc) · [MIT](https://github.com/fwextensions/figma-await-ipc/blob/main/LICENSE)
 
-A simple `await`-able replacement for `postMessage()` in Figma plugins.
+یک جایگزین ساده و قابل `await` برای `postMessage()` در پلاگین‌های فیگما.
 
 ---
 
 #### Figma Plugin Helpers
 
-[SOURCE CODE](https://github.com/figma-plugin-helper-functions/figma-plugin-helpers) · NO LICENSE
+[کد منبع](https://github.com/figma-plugin-helper-functions/figma-plugin-helpers) · بدون لایسنس
 
-A collection of useful helper functions to import to your Figma plugin project
+مجموعه‌ای از توابع کمکی مفید برای ایمپورت کردن به پروژه پلاگین فیگمای شما.
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
 ---
 
-### CI/CD Release Tools
+### ابزارهای انتشار CI/CD
 
 #### figcd
 
-[SOURCE CODE](https://github.com/parrot-global/figcd) · [MIT](https://github.com/parrot-global/figcd/blob/main/LICENSE)
+[کد منبع](https://github.com/parrot-global/figcd) · [MIT](https://github.com/parrot-global/figcd/blob/main/LICENSE)
 
-A CLI tool for seamless continuous delivery of Figma plugins. Inspired by Fastlane, figcd streamlines the manual process of publishing Figma plugins.
+یک ابزار CLI برای تحویل مستمر و یکپارچه پلاگین‌های فیگما. با الهام از Fastlane، figcd فرآیند دستی انتشار پلاگین‌های فیگما را ساده‌سازی می‌کند.
 
 #### figma-plugin-deploy
 
-[SOURCE CODE](https://github.com/typper-io/figma-plugin-deploy) · [MIT](https://github.com/typper-io/figma-plugin-deploy/blob/main/LICENSE)
+[کد منبع](https://github.com/typper-io/figma-plugin-deploy) · [MIT](https://github.com/typper-io/figma-plugin-deploy/blob/main/LICENSE)
 
-A GitHub Action to automate the deployment of Figma plugins. This action handles the entire deployment process, from authentication to publishing, making continuous deployment of Figma plugins seamless and efficient.
+یک GitHub Action برای خودکارسازی فرآیند استقرار پلاگین‌های فیگما. این اکشن کل فرآیند استقرار، از احراز هویت تا انتشار را مدیریت می‌کند و تحویل مستمر پلاگین‌های فیگما را یکپارچه و کارآمد می‌سازد.
 
-**[⬆ Back to TOC](#table-of-contents)**
-
----
-
-## Plugins
-
-A collection of plugins that have been open-sourced. You can install these plugins, audit them or fork your own if you want to host your own.
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
 ---
 
-### Accessibility
+## پلاگین‌ها
+
+مجموعه‌ای از پلاگین‌هایی که به صورت متن‌باز منتشر شده‌اند. می‌توانید این پلاگین‌ها را نصب، بررسی یا برای میزبانی نسخه خود، فورک کنید.
+
+---
+
+### دسترسی‌پذیری
 
 #### Include
 
-[SOURCE CODE](https://github.com/eBay/figma-include-accessibility-annotations) · [PLUGIN](https://www.figma.com/community/plugin/1208180794570801545/includeaccessibility-annotations) · [APACHE LICENSE 2.0](https://github.com/eBay/figma-include-accessibility-annotations/blob/main/LICENSE)
+[کد منبع](https://github.com/eBay/figma-include-accessibility-annotations) · [پلاگین](https://www.figma.com/community/plugin/1208180794570801545/includeaccessibility-annotations) · [APACHE LICENSE 2.0](https://github.com/eBay/figma-include-accessibility-annotations/blob/main/LICENSE)
 
-Include is a Figma plugin that simplifies annotating for accessibility (a11y). It makes it easier for designers to spec and easier for developers to understand what is required.
+Include یک پلاگین فیگما است که حاشیه‌نویسی برای دسترسی‌پذیری (a11y) را ساده می‌کند. این کار را برای طراحان جهت مشخص کردن و برای توسعه‌دهندگان جهت درک نیازمندی‌ها آسان‌تر می‌کند.
 
 ---
 
 #### Polychrom
 
-[SOURCE CODE](https://github.com/evilmartians/figma-polychrom) · [PLUGIN](https://www.figma.com/community/plugin/1281280685402026529/polychrom) · [MIT](https://github.com/evilmartians/figma-polychrom/blob/main/LICENSE)
+[کد منبع](https://github.com/evilmartians/figma-polychrom) · [پلاگین](https://www.figma.com/community/plugin/1281280685402026529/polychrom) · [MIT](https://github.com/evilmartians/figma-polychrom/blob/main/LICENSE)
 
-Polychrom is a Figma plugin that allows users to measure contrast levels between selected layers, providing instant feedback. It uses the APCA method to determine contrast, provides text size recommendations, and converts colors to various formats, including OKLCH, RGB, and HEX for easy CSS code copying.
+Polychrom یک پلاگین فیگما است که به کاربران اجازه می‌دهد سطح کنتراست بین لایه‌های انتخاب‌شده را اندازه‌گیری کرده و بازخورد فوری دریافت کنند. این پلاگین از متد APCA برای تعیین کنتراست استفاده می‌کند، پیشنهاداتی برای اندازه متن ارائه می‌دهد و رنگ‌ها را به فرمت‌های مختلفی از جمله OKLCH، RGB و HEX برای کپی آسان کد CSS تبدیل می‌کند.
 
 ---
 
 #### zebra
 
-[SOURCE CODE](https://github.com/danhollick/zebra) · [PLUGIN](https://www.figma.com/c/plugin/806578669827234193/zebra) · NO LICENSE
+[کد منبع](https://github.com/danhollick/zebra) · [پلاگین](https://www.figma.com/c/plugin/806578669827234193/zebra) · بدون لایسنس
 
-Zebra is a fast, lightweight colour contrast checker.
+Zebra یک ابزار سریع و سبک برای بررسی کنتراست رنگ است.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Color
+### رنگ
 
 #### Chroma
 
-[SOURCE CODE](https://github.com/kaleidocode-app/chroma) · [PLUGIN](https://www.figma.com/c/plugin/739237058450529919/Chroma-Colors) · [MIT](https://github.com/kaleidocode-app/chroma/blob/master/LICENSE)
+[کد منبع](https://github.com/kaleidocode-app/chroma) · [پلاگین](https://www.figma.com/c/plugin/739237058450529919/Chroma-Colors) · [MIT](https://github.com/kaleidocode-app/chroma/blob/master/LICENSE)
 
-A Figma plugin for creating bulk color styles from selection.
+یک پلاگین فیگما برای ساخت استایل‌های رنگی به صورت دسته‌ای از آیتم‌های انتخاب شده.
 
 ---
 
 #### Dominant Color
 
-[SOURCE CODE](https://github.com/brianlovin/figma-dominant-color-toolkit) · [PLUGIN](https://www.figma.com/community/plugin/744725347356614754/Dominant-Color-Toolkit-%F0%9F%8E%A8) · [MIT](https://github.com/brianlovin/figma-dominant-color-toolkit/blob/main/LICENSE)
+[کد منبع](https://github.com/brianlovin/figma-dominant-color-toolkit) · [پلاگین](https://www.figma.com/community/plugin/744725347356614754/Dominant-Color-Toolkit-%F0%9F%8E%A8) · [MIT](https://github.com/brianlovin/figma-dominant-color-toolkit/blob/main/LICENSE)
 
-Generate a palette from an image to magically populate your designs.
+یک پالت رنگی از یک تصویر تولید کنید تا به طور جادویی طرح‌های خود را پر کنید.
 
 ---
 
 #### Easing Gradient
 
-[SOURCE CODE](https://github.com/alexwidua/figma-easing-gradients) · [PLUGIN](https://www.figma.com/c/plugin/781591244449826498/Easing-Gradient) · [MIT](https://github.com/alexwidua/figma-easing-gradients/blob/master/LICENSE)
+[کد منبع](https://github.com/alexwidua/figma-easing-gradients) · [پلاگین](https://www.figma.com/c/plugin/781591244449826498/Easing-Gradient) · [MIT](https://github.com/alexwidua/figma-easing-gradients/blob/master/LICENSE)
 
-Make beautiful smooth gradients in Figma. Linear gradients often have hard edges where they start and/or end. This plugin adds gradient stops to approximate easing functions.
+گرادینت‌های زیبا و نرم در فیگما بسازید. گرادینت‌های خطی اغلب در نقاط شروع و/یا پایان خود لبه‌های تیزی دارند. این پلاگین با افزودن نقاط توقف به گرادینت، توابع easing را شبیه‌سازی می‌کند.
 
 ---
 
 #### Lucidi
 
-[SOURCE CODE](https://github.com/dimuuu/lucidi) · [PLUGIN](https://www.figma.com/community/plugin/1235943434768675768) · [CC0](https://github.com/dimuuu/lucidi/blob/main/LICENSE)
+[کد منبع](https://github.com/dimuuu/lucidi) · [پلاگین](https://www.figma.com/community/plugin/1235943434768675768) · [CC0](https://github.com/dimuuu/lucidi/blob/main/LICENSE)
 
-Create & sync opacity styles based on primary opaque color styles.
+استایل‌های شفافیت (opacity) را بر اساس استایل‌های رنگی اصلی و مات ایجاد و همگام‌سازی کنید.
 
 ---
 
 #### Navigator
 
-[SOURCE CODE](https://github.com/kaleidocode-app/navigator) · [PLUGIN](https://www.figma.com/c/plugin/739558587628004077/Navigator) · NO LICENSE
+[کد منبع](https://github.com/kaleidocode-app/navigator) · [پلاگین](https://www.figma.com/c/plugin/739558587628004077/Navigator) · بدون لایسنس
 
-An easy way to find and apply color styles from your current document.
+روشی آسان برای پیدا کردن و اعمال استایل‌های رنگی از سند فعلی شما.
 
 ---
 
 #### system.colors()
 
-[SOURCE CODE](https://github.com/thelittlewonder/system.colors) · [PLUGIN](https://www.figma.com/community/plugin/832358256915224919) · NO LICENSE
+[کد منبع](https://github.com/thelittlewonder/system.colors) · [پلاگین](https://www.figma.com/community/plugin/832358256915224919) · بدون لایسنس
 
-Import color palettes from popular design systems directly to your file.
+پالت‌های رنگی از سیستم‌های طراحی محبوب را مستقیماً به فایل خود وارد کنید.
 
 ---
 
 #### Valor
 
-[SOURCE CODE](https://github.com/kolebayev/valor-figma-plugin) · [PLUGIN](https://www.figma.com/community/plugin/798588768596541799/Valor) · NO LICENSE
+[کد منبع](https://github.com/kolebayev/valor-figma-plugin) · [پلاگین](https://www.figma.com/community/plugin/798588768596541799/Valor) · بدون لایسنس
 
-Visualise existing or new color palettes in your design system or Generate lists of color variables from color palettes.
+پالت‌های رنگی موجود یا جدید را در سیستم طراحی خود تجسم کنید یا لیستی از متغیرهای رنگی از پالت‌های رنگی تولید کنید.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Design Linters
+### لینترهای طراحی
 
 #### Design Lint
 
-[SOURCE CODE](https://github.com/destefanis/design-lint) · [PLUGIN](https://www.figma.com/c/plugin/801195587640428208/Design-Lint) · [MIT](https://github.com/destefanis/design-lint/blob/master/LICENSE)
+[کد منبع](https://github.com/destefanis/design-lint) · [پلاگین](https://www.figma.com/c/plugin/801195587640428208/Design-Lint) · [MIT](https://github.com/destefanis/design-lint/blob/master/LICENSE)
 
-Find and fix errors in your designs for free.
+خطاهای موجود در طرح‌های خود را به صورت رایگان پیدا و اصلاح کنید.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Design Systems
+### سیستم‌های طراحی
 
 #### Design Tokens
 
-[SOURCE CODE](https://github.com/lukasoppermann/design-tokens) · [PLUGIN](https://www.figma.com/community/plugin/888356646278934516/design-tokens) · [MIT](https://github.com/lukasoppermann/design-tokens/blob/main/LICENSE)
+[کد منبع](https://github.com/lukasoppermann/design-tokens) · [پلاگین](https://www.figma.com/community/plugin/888356646278934516/design-tokens) · [MIT](https://github.com/lukasoppermann/design-tokens/blob/main/LICENSE)
 
-Design Tokens is a Figma Plugin that allows you export design tokens into a json format, allowing you to transform them to different languages and platforms for web, iOS, and Android.
+Design Tokens یک پلاگین فیگما است که به شما امکان می‌دهد توکن‌های طراحی را به فرمت JSON خروجی بگیرید و آن‌ها را برای وب، iOS و اندروید به زبان‌ها و پلتفرم‌های مختلف تبدیل کنید.
 
 ---
 
 #### Styler
 
-[SOURCE CODE](https://github.com/andrei-inc/Styler) · [PLUGIN](https://www.figma.com/community/plugin/820660579767995949/Styler) · [MIT](https://github.com/andreincu/Styler/blob/master/LICENSE)
+[کد منبع](https://github.com/andrei-inc/Styler) · [پلاگین](https://www.figma.com/community/plugin/820660579767995949/Styler) · [MIT](https://github.com/andreincu/Styler/blob/master/LICENSE)
 
-Styler is a Figma plugin that provides a more efficient way to build and maintain design systems.
+Styler یک پلاگین فیگما است که روشی کارآمدتر برای ساخت و نگهداری سیستم‌های طراحی ارائه می‌دهد.
 
 ---
 
 #### Themer
 
-[SOURCE CODE](https://github.com/thomas-lowry/themer) · [PLUGIN](https://www.figma.com/c/plugin/731176732337510831/Themer) · [MIT](https://github.com/thomas-lowry/themer/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/themer) · [پلاگین](https://www.figma.com/c/plugin/731176732337510831/Themer) · [MIT](https://github.com/thomas-lowry/themer/blob/master/LICENSE)
 
-A Figma plugin designed to allow you to swap between styles named the same from different published libraries.
+پلاگینی برای فیگما که به شما امکان می‌دهد بین استایل‌هایی با نام یکسان از کتابخانه‌های منتشر شده مختلف جابجا شوید.
 
 ---
 
 #### Tokens Studio for Figma
 
-[SOURCE CODE](https://github.com/six7/figma-tokens) · [PLUGIN](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens) · [MIT](https://github.com/tokens-studio/figma-plugin/blob/main/LICENSE.md)
+[کد منبع](https://github.com/six7/figma-tokens) · [پلاگین](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens) · [MIT](https://github.com/tokens-studio/figma-plugin/blob/main/LICENSE.md)
 
-Tokens Studio for Figma is a plugin for Figma allowing you to define and use design tokens in Figma. You can store your design tokens in JSON, sync them with a sync provider such as GitHub and define tokens even for properties that have no native support yet in Figma, such as borderRadius or spacing.
+Tokens Studio for Figma یک پلاگین برای فیگما است که به شما امکان تعریف و استفاده از توکن‌های طراحی در فیگما را می‌دهد. شما می‌توانید توکن‌های طراحی خود را در فرمت JSON ذخیره کنید، آن‌ها را با یک ارائه‌دهنده همگام‌سازی مانند گیت‌هاب سینک کنید و حتی برای ویژگی‌هایی که هنوز در فیگما پشتیبانی بومی ندارند، مانند borderRadius یا spacing، توکن تعریف کنید.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Developer Tools
+### ابزارهای توسعه‌دهندگان
 
 #### Figma to Boostrap 5 Plugin
 
-[SOURCE CODE](https://github.com/gabrielrbarbosa/figma-to-bootstrap-plugin) · [PLUGIN](https://www.figma.com/community/plugin/1287660587112027215/figma-to-bootstrap-5-plugin) · [GPLv3](https://github.com/gabrielrbarbosa/figma-to-bootstrap-plugin/blob/main/LICENSE)
+[کد منبع](https://github.com/gabrielrbarbosa/figma-to-bootstrap-plugin) · [پلاگین](https://www.figma.com/community/plugin/1287660587112027215/figma-to-bootstrap-5-plugin) · [GPLv3](https://github.com/gabrielrbarbosa/figma-to-bootstrap-plugin/blob/main/LICENSE)
 
-Turn your Figma designs into Bootstrap 5 snippets! It generates bootstrap 5 grid, borders and utilities.
+طرح‌های فیگمای خود را به قطعه‌ کدهای بوت‌استرپ ۵ تبدیل کنید! این پلاگین گرید، borderها و ابزارهای کاربردی بوت‌استرپ ۵ را تولید می‌کند.
 
 ---
 
 #### Figma Tailwindcss
 
-[SOURCE CODE](https://github.com/jan-dh/figma-tailwindcss) · [PLUGIN](https://www.figma.com/c/plugin/785619431629077634/Figma-Tailwindcss) · NO LICENSE
+[کد منبع](https://github.com/jan-dh/figma-tailwindcss) · [پلاگین](https://www.figma.com/c/plugin/785619431629077634/Figma-Tailwindcss) · بدون لایسنس
 
-Figma Tailwindcss lets you export aspects of a design made in Figma to a javascript theme file that can easily be used with Tailwindcss.
+Figma Tailwindcss به شما امکان می‌دهد جنبه‌هایی از یک طرح ساخته‌شده در فیگما را به یک فایل تم جاوااسکریپت خروجی بگیرید که به راحتی با Tailwindcss قابل استفاده است.
 
 ---
 
 #### Kaleidocode
 
-[SOURCE CODE](https://github.com/kaleidocode-app/kaleidocode) · [PLUGIN](https://www.figma.com/c/plugin/736060893363678891/Kaleidocode) · NO LICENSE
+[کد منبع](https://github.com/kaleidocode-app/kaleidocode) · [پلاگین](https://www.figma.com/c/plugin/736060893363678891/Kaleidocode) · بدون لایسنس
 
-Convert VS Code themes to Figma color libraries, create new themes via JSON, and swap themes automatically.
+تم‌های VS Code را به کتابخانه‌های رنگی فیگما تبدیل کنید، تم‌های جدید از طریق JSON بسازید و تم‌ها را به طور خودکار جابجا کنید.
 
 ---
 
 #### Tailwind CSS
 
-[SOURCE CODE](https://github.com/impulse/tailwindcss-figma-plugin) · [PLUGIN](https://www.figma.com/community/plugin/738806869514947558/Tailwind-CSS) · [MIT](https://github.com/ecklf/tailwindcss-figma-plugin/blob/main/LICENSE)
+[کد منبع](https://github.com/impulse/tailwindcss-figma-plugin) · [پلاگین](https://www.figma.com/community/plugin/738806869514947558/Tailwind-CSS) · [MIT](https://github.com/ecklf/tailwindcss-figma-plugin/blob/main/LICENSE)
 
-Generate styles and other cool stuff straight out of your tailwind config file.
+استایل‌ها و چیزهای جالب دیگر را مستقیماً از فایل کانفیگ tailwind خود تولید کنید.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Export
+### خروجی گرفتن (Export)
 
 #### Android Resources Export
 
-[SOURCE CODE](https://github.com/Ashung/android-resources-export-figma) · [PLUGIN](https://www.figma.com/c/plugin/735452896889481850/Android-Resources-Export) · [MIT](https://github.com/Ashung/android-resources-export-figma/blob/master/LICENSE.md)
+[کد منبع](https://github.com/Ashung/android-resources-export-figma) · [پلاگین](https://www.figma.com/c/plugin/735452896889481850/Android-Resources-Export) · [MIT](https://github.com/Ashung/android-resources-export-figma/blob/master/LICENSE.md)
 
-Export multiple sizes PNG from selected slice or exportable layer, with a fixed folder structure (drawable-xhdpi, etc..) and valid name.
+خروجی PNG در اندازه‌های مختلف از slice یا لایه قابل خروجی گرفتن، با ساختار پوشه ثابت (drawable-xhdpi و غیره) و نام معتبر.
 
 ---
 
 #### Figma Export
 
-[SOURCE CODE](https://github.com/brianlovin/figma-export-zip) · [PLUGIN](https://www.figma.com/c/plugin/747228167548695118/Export-.zip) · NO LICENSE
+[کد منبع](https://github.com/brianlovin/figma-export-zip) · [پلاگین](https://www.figma.com/c/plugin/747228167548695118/Export-.zip) · بدون لایسنس
 
-Easily export assets from Figma directly into a .zip file.
+به راحتی دارایی‌ها (assets) را از فیگما مستقیماً به یک فایل .zip خروجی بگیرید.
 
 ---
 
 #### Image Minifire
 
-[SOURCE CODE](https://github.com/zendyani/figma-image-compression) · [PLUGIN](https://www.figma.com/community/plugin/1284557222547216612/image-minifire) · [MIT](https://github.com/zendyani/figma-image-compression/blob/main/LICENSE)
+[کد منبع](https://github.com/zendyani/figma-image-compression) · [پلاگین](https://www.figma.com/community/plugin/1284557222547216612/image-minifire) · [MIT](https://github.com/zendyani/figma-image-compression/blob/main/LICENSE)
 
-Image Minifire allows the user to compress and export images of a selected frame in Figma.
+Image Minifire به کاربر اجازه می‌دهد تا تصاویر یک فریم انتخاب‌شده در فیگما را فشرده و خروجی بگیرد.
 
 ---
 
 #### Lazy Export
 
-[SOURCE CODE](https://github.com/kocheck/Lazy-Export) · [PLUGIN](https://www.figma.com/community/plugin/824059814042167296/Lazy-Export) · [MIT](https://github.com/kocheck/Lazy-Export/blob/production/LICENSE)
+[کد منبع](https://github.com/kocheck/Lazy-Export) · [پلاگین](https://www.figma.com/community/plugin/824059814042167296/Lazy-Export) · [MIT](https://github.com/kocheck/Lazy-Export/blob/production/LICENSE)
 
-Lazy Export allows the user to quickly apply default export settings to selected objects in Figma.
+Lazy Export به کاربر اجازه می‌دهد تا به سرعت تنظیمات خروجی پیش‌فرض را به اشیاء انتخاب‌شده در فیگما اعمال کند.
 
 ---
 
 #### Figma Sprite Generator
 
-[SOURCE CODE](https://github.com/omidnikrah/figma-sprite-generator) · [PLUGIN](https://www.figma.com/community/plugin/1424139256012895014/goodway-sprite) · [MIT](https://github.com/omidnikrah/figma-sprite-generator/blob/main/LICENSE)
+[کد منبع](https://github.com/omidnikrah/figma-sprite-generator) · [پلاگین](https://www.figma.com/community/plugin/1424139256012895014/goodway-sprite) · [MIT](https://github.com/omidnikrah/figma-sprite-generator/blob/main/LICENSE)
 
-A Figma plugin to generate sprite sheets and JSON files from selected icons.
+یک پلاگین فیگما برای تولید sprite sheet و فایل‌های JSON از آیکون‌های انتخاب شده.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Icons
+### آیکون‌ها
 
 #### 3dicons
 
-[SOURCE CODE](https://github.com/realvjy/3dicons-figma) • [PLUGIN](https://www.figma.com/community/plugin/1107546399747513238) • [MIT](https://github.com/realvjy/3dicons-figma/blob/main/LICENSE)
+[کد منبع](https://github.com/realvjy/3dicons-figma) • [پلاگین](https://www.figma.com/community/plugin/1107546399747513238) • [MIT](https://github.com/realvjy/3dicons-figma/blob/main/LICENSE)
 
-Collection 1400+ 3dicons. You can use within Figma or Figjam files quickly. The icons can be searched and filtered by color and angle.
+مجموعه‌ای با بیش از ۱۴۰۰ آیکون سه‌بعدی. می‌توانید به سرعت در فایل‌های فیگما یا فیگ‌جم از آن‌ها استفاده کنید. آیکون‌ها را می‌توان بر اساس رنگ و زاویه جستجو و فیلتر کرد.
 
 ---
 
 #### Feather Icons
 
-[SOURCE CODE](https://github.com/feathericons/figma-feather) · [PLUGIN](https://www.figma.com/c/plugin/744047966581015514/Feather-Icons) · NO LICENSE
+[کد منبع](https://github.com/feathericons/figma-feather) · [پلاگین](https://www.figma.com/c/plugin/744047966581015514/Feather-Icons) · بدون لایسنس
 
-Quick access to Feather icons in Figma.
+دسترسی سریع به آیکون‌های Feather در فیگما.
 
 ---
 
 #### Figma Text to Icon
 
-[SOURCE CODE](https://github.com/lichin-lin/figma-text-to-icon) • NO LICENSE
+[کد منبع](https://github.com/lichin-lin/figma-text-to-icon) • بدون لایسنس
 
-A Figma plugin that generate icon from text, built with Next.js, Tailwind, Shadcn UI, and Replicate API
+یک پلاگین فیگما که از متن، آیکون تولید می‌کند و با Next.js، Tailwind، Shadcn UI و Replicate API ساخته شده است.
 
 ---
 
 #### Iconify
 
-[SOURCE CODE](https://github.com/iconify/iconify-figma) • [PLUGIN](https://www.figma.com/community/plugin/735098390272716381/Iconify) • [APACHE LICENSE 2.0](https://github.com/iconify/iconify-figma/blob/main/license.txt)
+[کد منبع](https://github.com/iconify/iconify-figma) • [پلاگین](https://www.figma.com/community/plugin/735098390272716381/Iconify) • [APACHE LICENSE 2.0](https://github.com/iconify/iconify-figma/blob/main/license.txt)
 
-Import Material Design Icons, FontAwesome, Jam Icons, EmojiOne, Twitter Emoji and many other icons (more than 100 icon sets containing over 100,000 icons) to Figma document as vector shapes.
+آیکون‌های Material Design، FontAwesome، Jam Icons، EmojiOne، Twitter Emoji و بسیاری دیگر (بیش از ۱۰۰ مجموعه آیکون شامل بیش از ۱۰۰,۰۰۰ آیکون) را به عنوان اشکال وکتور به سند فیگما وارد کنید.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Maps
+### نقشه‌ها
 
 #### Figma Map Maker
 
-[SOURCE CODE](https://github.com/kawamurakazushi/figma-map-maker) · [PLUGIN](https://www.figma.com/c/plugin/731312569747199418/Map-Maker) · [MIT](https://github.com/kawamurakazushi/figma-sort-it/blob/master/LICENSE)
+[کد منبع](https://github.com/kawamurakazushi/figma-map-maker) · [پلاگین](https://www.figma.com/c/plugin/731312569747199418/Map-Maker) · [MIT](https://github.com/kawamurakazushi/figma-sort-it/blob/master/LICENSE)
 
-Figma plugin to generate map, supporting Google Maps and Mapbox.
+پلاگین فیگما برای تولید نقشه، با پشتیبانی از Google Maps و Mapbox.
 
 ---
 
 #### Figmap
 
-[SOURCE CODE](https://github.com/ergum/figmap) · [PLUGIN](https://www.figma.com/community/plugin/937760472566581732) · NO LICENSE
+[کد منبع](https://github.com/ergum/figmap) · [پلاگین](https://www.figma.com/community/plugin/937760472566581732) · بدون لایسنس
 
-Fully customizable styled maps and markers for Figma
+نقشه‌ها و نشانگرهای کاملاً قابل سفارشی‌سازی برای فیگما.
 
 ---
 
 #### Placemark Figma Plugin
 
-[SOURCE CODE](https://github.com/placemark/figma-plugin) · [PLUGIN](https://www.figma.com/community/plugin/1189962635826293304/Placemark) · NO LICENSE
+[کد منبع](https://github.com/placemark/figma-plugin) · [پلاگین](https://www.figma.com/community/plugin/1189962635826293304/Placemark) · بدون لایسنس
 
-Create maps with Figma.
+با فیگما نقشه بسازید.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Organization
+### سازماندهی
 
 #### Figma Format
 
-[SOURCE CODE](https://github.com/kawamurakazushi/figma-format) · [PLUGIN](https://www.figma.com/c/plugin/732774680197470712/Figma-Format) · [MIT](https://github.com/kawamurakazushi/figma-format/blob/master/LICENSE)
+[کد منبع](https://github.com/kawamurakazushi/figma-format) · [پلاگین](https://www.figma.com/c/plugin/732774680197470712/Figma-Format) · [MIT](https://github.com/kawamurakazushi/figma-format/blob/master/LICENSE)
 
-Figma Format let's you format your canvas by grouping them by the names.
+Figma Format به شما اجازه می‌دهد تا با گروه‌بندی فریم‌ها بر اساس نامشان، بوم (canvas) خود را قالب‌بندی کنید.
 
 ---
 
 #### GridGen · Automatic Table Generator
 
-[SOURCE CODE](https://github.com/gnawx/figma-plugins/tree/master/packages/figma-gridgen) · [PLUGIN](https://www.figma.com/c/plugin/796759972238579874/GridGen) · [MIT](https://github.com/stevahnes/figma-plugins/blob/master/LICENSE)
+[کد منبع](https://github.com/gnawx/figma-plugins/tree/master/packages/figma-gridgen) · [پلاگین](https://www.figma.com/c/plugin/796759972238579874/GridGen) · [MIT](https://github.com/stevahnes/figma-plugins/blob/master/LICENSE)
 
-Utilizes built-in Figma rectangles, lines, and texts to generate tables with neatly organized layers.
+با استفاده از مستطیل‌ها، خطوط و متون داخلی فیگما، جداولی با لایه‌های منظم تولید می‌کند.
 
 ---
 
 #### Project Scaffold
 
-[SOURCE CODE](https://github.com/tushar7d/Project-Scaffold-Figma-Plugin) · [PLUGIN](https://www.figma.com/c/plugin/747372158567878238/Project-Scaffold) · NO LICENSE
+[کد منبع](https://github.com/tushar7d/Project-Scaffold-Figma-Plugin) · [پلاگین](https://www.figma.com/c/plugin/747372158567878238/Project-Scaffold) · بدون لایسنس
 
-This plugin Generates a Scaffold for your Product design project in just 1 click.
+این پلاگین تنها با یک کلیک یک ساختار کلی (Scaffold) برای پروژه طراحی محصول شما تولید می‌کند.
 
 ---
 
 #### Super Tidy
 
-[SOURCE CODE](https://github.com/basiclines/figma-super-tidy) · [PLUGIN](https://www.figma.com/c/plugin/731260060173130163/Super-Tidy) · [MIT](https://github.com/basiclines/figma-super-tidy/blob/master/LICENSE)
+[کد منبع](https://github.com/basiclines/figma-super-tidy) · [پلاگین](https://www.figma.com/c/plugin/731260060173130163/Super-Tidy) · [MIT](https://github.com/basiclines/figma-super-tidy/blob/master/LICENSE)
 
-A Figma plugin to easily align, rename and reorder your frames based in their canvas position.
+یک پلاگین فیگما برای تراز کردن، تغییر نام و ترتیب‌دهی آسان فریم‌های شما بر اساس موقعیت‌شان در بوم.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Responsive
+### ریسپانسیو (واکنش‌گرا)
 
 #### Responsify
 
-[SOURCE CODE](https://github.com/brianlovin/figma-responsify) · [PLUGIN](https://www.figma.com/c/plugin/743654854885744527/Responsify-%E2%9A%A1%EF%B8%8F) · NO LICENSE
+[کد منبع](https://github.com/brianlovin/figma-responsify) · [پلاگین](https://www.figma.com/c/plugin/743654854885744527/Responsify-%E2%9A%A1%EF%B8%8F) · بدون لایسنس
 
-A Figma plugin to quickly test your designs across multiple device sizes.
+یک پلاگین فیگما برای تست سریع طرح‌های شما در اندازه‌های مختلف دستگاه‌ها.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Text
+### متن
 
 #### Better Font Picker
 
-[SOURCE CODE](https://github.com/nitinrgupta/figma-better-font-picker) · [PLUGIN](https://www.figma.com/c/plugin/739922281164562258/Better-Font-Picker) · [MIT](https://github.com/yenargy/figma-better-font-picker/blob/develop/LICENSE)
+[کد منبع](https://github.com/nitinrgupta/figma-better-font-picker) · [پلاگین](https://www.figma.com/c/plugin/739922281164562258/Better-Font-Picker) · [MIT](https://github.com/yenargy/figma-better-font-picker/blob/develop/LICENSE)
 
-Better Font Picker helps you select fonts with a preview of how it looks.
+Better Font Picker به شما کمک می‌کند فونت‌ها را با پیش‌نمایشی از ظاهر آن‌ها انتخاب کنید.
 
 ---
 
 #### Content Buddy
 
-[SOURCE CODE](https://github.com/basiclines/figma-content-buddy) · [PLUGIN](https://www.figma.com/c/plugin/731260490045684148/Content-Buddy) · [MIT](https://github.com/basiclines/figma-content-buddy/blob/master/LICENSE)
+[کد منبع](https://github.com/basiclines/figma-content-buddy) · [پلاگین](https://www.figma.com/c/plugin/731260490045684148/Content-Buddy) · [MIT](https://github.com/basiclines/figma-content-buddy/blob/master/LICENSE)
 
-A Figma Plugin that makes replacing text content in multiple layers super easy for anyone.
+یک پلاگین فیگما که جایگزینی محتوای متنی در چندین لایه را برای هر کسی بسیار آسان می‌کند.
 
 ---
 
 #### Tolgee
 
-[SOURCE CODE](https://github.com/tolgee/figma-plugin) • [PLUGIN](https://www.figma.com/community/plugin/1212381421658754793/Tolgee-localization) • [MIT](https://github.com/tolgee/figma-plugin/blob/main/LICENSE)
+[کد منبع](https://github.com/tolgee/figma-plugin) • [پلاگین](https://www.figma.com/community/plugin/1212381421658754793/Tolgee-localization) • [MIT](https://github.com/tolgee/figma-plugin/blob/main/LICENSE)
 
-Easily manage translations within your Figma design files by connecting Figma with Tolgee localization platform.
+با اتصال فیگما به پلتفرم بومی‌سازی Tolgee، ترجمه‌ها را به راحتی در فایل‌های طراحی فیگمای خود مدیریت کنید.
 
 ---
 
 #### Typograf
 
-[SOURCE CODE](https://github.com/golmakov/figma-typograf-plugin) · [PLUGIN](https://www.figma.com/c/plugin/745519632050796775/Typograf) · NO LICENSE
+[کد منبع](https://github.com/golmakov/figma-typograf-plugin) · [پلاگین](https://www.figma.com/c/plugin/745519632050796775/Typograf) · بدون لایسنس
 
-Figma plugin for making good typographic text.
+پلاگین فیگما برای ایجاد متن با تایپوگرافی خوب.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Utilities
+### ابزارهای کاربردی
 
 #### Batch Styler
 
-[SOURCE CODE](https://github.com/six7/figma-batch-styler) · [PLUGIN](https://www.figma.com/community/plugin/818203235789864127/Batch-Styler) · [MIT](https://github.com/six7/figma-batch-styler/blob/master/LICENSE)
+[کد منبع](https://github.com/six7/figma-batch-styler) · [پلاگین](https://www.figma.com/community/plugin/818203235789864127/Batch-Styler) · [MIT](https://github.com/six7/figma-batch-styler/blob/master/LICENSE)
 
-Batch Styler is a plugin allowing you to edit multiple text or color styles at once.
+Batch Styler پلاگینی است که به شما امکان ویرایش چندین استایل متن یا رنگ را به طور همزمان می‌دهد.
 
 ---
 
 #### Component to page
 
-[SOURCE CODE](https://github.com/thomas-lowry/component-to-page) · [PLUGIN](https://www.figma.com/c/plugin/749583881837062159/Component-Page) · [MIT](https://github.com/thomas-lowry/component-to-page/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/component-to-page) · [پلاگین](https://www.figma.com/c/plugin/749583881837062159/Component-Page) · [MIT](https://github.com/thomas-lowry/component-to-page/blob/master/LICENSE)
 
-This plugin enables you to create a component (like you would in Sketch) where the master moves to a dedicated page leaving an instance in place.
+این پلاگین به شما امکان می‌دهد یک کامپوننت بسازید (مانند Sketch) که در آن کامپوننت اصلی (master) به یک صفحه اختصاصی منتقل می‌شود و یک نمونه (instance) در جای خود باقی می‌ماند.
 
 ---
 
 #### Edit in place
 
-[SOURCE CODE](https://github.com/thomas-lowry/edit-in-place) · [PLUGIN](https://www.figma.com/c/plugin/754704266165393093/Edit-in-place) · NO LICENSE
+[کد منبع](https://github.com/thomas-lowry/edit-in-place) · [پلاگین](https://www.figma.com/c/plugin/754704266165393093/Edit-in-place) · بدون لایسنس
 
-Select any instance of a local component and edit the master component in place from the context of wherever you are using the instance. This is handy if your master components are on another page!
+هر نمونه‌ای از یک کامپوننت محلی را انتخاب کنید و کامپوننت اصلی را در همان‌جا و در زمینه جایی که از نمونه استفاده می‌کنید، ویرایش کنید. این قابلیت زمانی مفید است که کامپوننت‌های اصلی شما در صفحه‌ای دیگر قرار دارند!
 
 ---
 
 #### Emoji Pattern Generator
 
-[SOURCE CODE](https://github.com/niyamax/figma-emoji-pattern-generator) • [PLUGIN](https://www.figma.com/community/plugin/1307592924492712453/emoji-pattern-generator) • [MIT](https://github.com/niyamax/figma-emoji-pattern-generator/blob/main/LICENSE)
+[کد منبع](https://github.com/niyamax/figma-emoji-pattern-generator) • [پلاگین](https://www.figma.com/community/plugin/1307592924492712453/emoji-pattern-generator) • [MIT](https://github.com/niyamax/figma-emoji-pattern-generator/blob/main/LICENSE)
 
-A Figma plugin that generates beautiful patterns using emojis. Create unique designs with different pattern styles and emoji combinations.
+یک پلاگین فیگما که با استفاده از ایموجی‌ها الگوهای زیبایی ایجاد می‌کند. با سبک‌های مختلف الگو و ترکیب ایموجی‌ها، طرح‌های منحصر به فرد بسازید.
 
 ---
 
 #### Figma Measure
 
-[SOURCE CODE](https://github.com/ph1p/figma-measure) · [PLUGIN](https://www.figma.com/c/plugin/739918456607459153/Figma-Measure) · [MIT](https://github.com/ph1p/figma-measure/blob/main/LICENSE)
+[کد منبع](https://github.com/ph1p/figma-measure) · [پلاگین](https://www.figma.com/c/plugin/739918456607459153/Figma-Measure) · [MIT](https://github.com/ph1p/figma-measure/blob/main/LICENSE)
 
-A plugin for easy measurement of sizes. A small user interface allows you to add arrows for heights and widths.
+پلاگینی برای اندازه‌گیری آسان ابعاد. یک رابط کاربری کوچک به شما امکان می‌دهد فلش‌هایی برای ارتفاع و عرض اضافه کنید.
 
 ---
 
 #### Figma Remove.bg Plugin
 
-[SOURCE CODE](https://github.com/aaroniker/figma-remove-bg) · [PLUGIN](https://www.figma.com/c/plugin/738992712906748191/Remove-BG) · NO LICENSE
+[کد منبع](https://github.com/aaroniker/figma-remove-bg) · [پلاگین](https://www.figma.com/c/plugin/738992712906748191/Remove-BG) · بدون لایسنس
 
-Remove background of images with just 1-click
+پس‌زمینه تصاویر را تنها با یک کلیک حذف کنید.
 
 ---
 
 #### Figma Sort It
 
-[SOURCE CODE](https://github.com/kawamurakazushi/figma-sort-it) · [PLUGIN](https://www.figma.com/c/plugin/731324768889901500/Sort-It) · [MIT](https://github.com/kawamurakazushi/figma-sort-it/blob/master/LICENSE)
+[کد منبع](https://github.com/kawamurakazushi/figma-sort-it) · [پلاگین](https://www.figma.com/c/plugin/731324768889901500/Sort-It) · [MIT](https://github.com/kawamurakazushi/figma-sort-it/blob/master/LICENSE)
 
-Sort selected Frames or Layers by names or position.
+فریم‌ها یا لایه‌های انتخاب‌شده را بر اساس نام یا موقعیت مرتب کنید.
 
 ---
 
 #### Figma Walker
 
-[SOURCE CODE](https://github.com/kawamurakazushi/figma-walker) · [PLUGIN](https://www.figma.com/c/plugin/732773762837487095/Figma-Walker) · [MIT](https://github.com/kawamurakazushi/figma-walker/blob/master/LICENSE)
+[کد منبع](https://github.com/kawamurakazushi/figma-walker) · [پلاگین](https://www.figma.com/c/plugin/732773762837487095/Figma-Walker) · [MIT](https://github.com/kawamurakazushi/figma-walker/blob/master/LICENSE)
 
-Walkthrough your project without lifting your keyboard
+بدون برداشتن دست از روی کیبورد، در پروژه خود پیمایش کنید.
 
 ---
 
 #### Figmoji
 
-[SOURCE CODE](https://github.com/nitinrgupta/figmoji) · [PLUGIN](https://www.figma.com/c/plugin/736612173445813953/Figmoji) · NO LICENSE
+[کد منبع](https://github.com/nitinrgupta/figmoji) · [پلاگین](https://www.figma.com/c/plugin/736612173445813953/Figmoji) · بدون لایسنس
 
-Add emojis seamlessly onto your designs.
+ایموجی‌ها را به طور یکپارچه به طرح‌های خود اضافه کنید.
 
 ---
 
 #### Nester
 
-[SOURCE CODE](https://github.com/thomas-lowry/nester) · [PLUGIN](https://www.figma.com/c/plugin/787337376836787569/Nester) · [MIT](https://github.com/thomas-lowry/nester/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/nester) · [پلاگین](https://www.figma.com/c/plugin/787337376836787569/Nester) · [MIT](https://github.com/thomas-lowry/nester/blob/master/LICENSE)
 
-Nester will nest any object that resides above (but not inside) a top-level frame/artboard.
+Nester هر شیئی را که بالای یک فریم/آرت‌بورد سطح بالا (و نه داخل آن) قرار دارد، به داخل آن تودرتو می‌کند.
 
 ---
 
 #### Pattern Hero
 
-[SOURCE CODE](https://github.com/nitinrgupta/figma-pattern-hero) · [PLUGIN](https://www.figma.com/c/plugin/740556241021336678/Pattern-Hero) · NO LICENSE
+[کد منبع](https://github.com/nitinrgupta/figma-pattern-hero) · [پلاگین](https://www.figma.com/c/plugin/740556241021336678/Pattern-Hero) · بدون لایسنس
 
-Pattern Hero enables you to place selected elements or frames in a grid to create patterns.
+Pattern Hero به شما امکان می‌دهد عناصر یا فریم‌های انتخاب‌شده را در یک گرید قرار دهید تا الگو ایجاد کنید.
 
 ---
 
 #### Randomiser
 
-[SOURCE CODE](https://github.com/niyamax/Figma-Randomiser) • [PLUGIN](https://www.figma.com/community/plugin/1189284785668093844/randomiser) • [CC0-1.0](https://github.com/niyamax/Figma-Randomiser/blob/main/LICENSE)
+[کد منبع](https://github.com/niyamax/Figma-Randomiser) • [پلاگین](https://www.figma.com/community/plugin/1189284785668093844/randomiser) • [CC0-1.0](https://github.com/niyamax/Figma-Randomiser/blob/main/LICENSE)
 
-A Figma plugin which helps the users to randomise the size, position and color of the elements with in a frame
+یک پلاگین فیگما که به کاربران کمک می‌کند اندازه، موقعیت و رنگ عناصر داخل یک فریم را به صورت تصادفی تغییر دهند.
 
 ---
 
 #### Reattach Instance
 
-[SOURCE CODE](https://github.com/renancamm/figma-reattache-instance) · [PLUGIN](https://www.figma.com/c/plugin/741415678427267506/Reattach-Instance) · [MIT](https://github.com/renancamm/figma-reattache-instance/blob/master/LICENSE)
+[کد منبع](https://github.com/renancamm/figma-reattache-instance) · [پلاگین](https://www.figma.com/c/plugin/741415678427267506/Reattach-Instance) · [MIT](https://github.com/renancamm/figma-reattache-instance/blob/master/LICENSE)
 
-Relink a frame to a component by searching for similar instances.
+با جستجوی نمونه‌های مشابه، یک فریم را دوباره به یک کامپوننت متصل کنید.
 
 ---
 
 #### Reverse layer order
 
-[SOURCE CODE](https://github.com/mikegowen/figma-reverse-layer-order) · [PLUGIN](https://www.figma.com/c/plugin/738853407874474111/Reverse-Layer-Order) · NO LICENSE
+[کد منبع](https://github.com/mikegowen/figma-reverse-layer-order) · [پلاگین](https://www.figma.com/c/plugin/738853407874474111/Reverse-Layer-Order) · بدون لایسنس
 
-Figma plugin to reverse the order of the selected layers.
+پلاگین فیگما برای معکوس کردن ترتیب لایه‌های انتخاب‌شده.
 
 ---
 
 #### Send to top
 
-[SOURCE CODE](https://github.com/thomas-lowry/send-to-top) · [PLUGIN](https://www.figma.com/community/plugin/740593880490123393) · [MIT](https://github.com/thomas-lowry/send-to-top/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/send-to-top) · [پلاگین](https://www.figma.com/community/plugin/740593880490123393) · [MIT](https://github.com/thomas-lowry/send-to-top/blob/master/LICENSE)
 
-Sends selected layers to the very top of the layer stack above all other frames on the canvas.
+لایه‌های انتخاب‌شده را به بالاترین نقطه از پشته لایه‌ها، بالاتر از تمام فریم‌های دیگر روی بوم می‌فرستد.
 
 ---
 
 #### Sorter
 
-[SOURCE CODE](https://github.com/thomas-lowry/sorter) · [PLUGIN](https://www.figma.com/c/plugin/742038190980789811/Sorter) · [MIT](https://github.com/thomas-lowry/sorter/blob/master/LICENSE)
+[کد منبع](https://github.com/thomas-lowry/sorter) · [پلاگین](https://www.figma.com/c/plugin/742038190980789811/Sorter) · [MIT](https://github.com/thomas-lowry/sorter/blob/master/LICENSE)
 
-Enables the user to quickly sort the order of layers based on position, name (alphabetical), reverse order, or random.
+به کاربر امکان می‌دهد تا به سرعت ترتیب لایه‌ها را بر اساس موقعیت، نام (الفبایی)، ترتیب معکوس یا تصادفی مرتب کند.
 
 ---
 
 #### Variables Import
 
-[SOURCE CODE](https://github.com/microsoft/figma-variables-import) • [PLUGIN](https://www.figma.com/community/plugin/1253424530216967528/variables-import) • [MIT](https://github.com/microsoft/figma-variables-import/blob/main/LICENSE.txt)
+[کد منبع](https://github.com/microsoft/figma-variables-import) • [پلاگین](https://www.figma.com/community/plugin/1253424530216967528/variables-import) • [MIT](https://github.com/microsoft/figma-variables-import/blob/main/LICENSE.txt)
 
-The plugin allows import of design token as Figma variables. Note the parser is not fully compliant and does not support every token in the DTCG format.
+این پلاگین امکان وارد کردن توکن‌های طراحی به عنوان متغیرهای فیگما را فراهم می‌کند. توجه داشته باشید که پارسر آن کاملاً سازگار نیست و از همه توکن‌های فرمت DTCG پشتیبانی نمی‌کند.
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
 
-### Misc
+### متفرقه
 
 #### Retro Snake
 
-[SOURCE CODE](https://github.com/gnawx/figma-plugins/tree/master/packages/figma-retro-snake) · [PLUGIN](https://www.figma.com/community/plugin/812994090875519300/Retro-Snake) · [MIT](https://github.com/stevahnes/figma-plugins/blob/master/LICENSE)
+[کد منبع](https://github.com/gnawx/figma-plugins/tree/master/packages/figma-retro-snake) · [پلاگین](https://www.figma.com/community/plugin/812994090875519300/Retro-Snake) · [MIT](https://github.com/stevahnes/figma-plugins/blob/master/LICENSE)
 
-Bringing the retro game we all love into Figma, Snake!
-
----
-
-## Widgets
-
-A collection of widgets that have been open-sourced. You can install these widgets, audit them or fork your own if you want to host your own.
+آوردن بازی قدیمی که همه ما دوستش داریم، Snake، به داخل فیگما!
 
 ---
 
-**[⬆ Back to TOC](#table-of-contents)**
+## ویجت‌ها
+
+مجموعه‌ای از ویجت‌هایی که به صورت متن‌باز منتشر شده‌اند. می‌توانید این ویجت‌ها را نصب، بررسی یا برای میزبانی نسخه خود، فورک کنید.
+
+---
+
+**[⬆ بازگشت به فهرست مطالب](#table-of-contents)**
